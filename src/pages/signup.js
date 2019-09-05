@@ -4,7 +4,7 @@ export default class sigunp extends Component {
   render() {
     return (
       <div>
-        <h1>sigunp page</h1>
+        <h1>Signup page</h1>
       </div>
     )
   }
