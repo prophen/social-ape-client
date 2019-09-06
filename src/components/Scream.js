@@ -39,15 +39,16 @@ class Scream extends Component {
     } = this.props
     return (
       <Card className={classes.card}>
-        {userImage ? (
-          <CardMedia
-            image={userImage}
-            title="Profile image"
-            className={classes.image}
-          />
-        ) : (
-          <p>loading...</p>
-        )}
+        <CardMedia
+          image={
+            userImage ||
+            `https://api.adorable.io/avatars/285/${Math.floor(
+              Math.random() * Math.floor(7777)
+            )}.png`
+          }
+          title="Profile image"
+          className={classes.image}
+        />
 
         <CardContent className={classes.content}>
           <Typography
