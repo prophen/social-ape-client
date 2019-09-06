@@ -1,7 +1,7 @@
 import React, { Component } from "react"
-import Link from "react-router-dom/Link"
+import { Link } from "react-router-dom"
 // MUI
-import AppBar from "@material-ui/core/Appbar"
+import AppBar from "@material-ui/core/AppBar/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Button from "@material-ui/core/Button"
 
