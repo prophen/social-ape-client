@@ -11,32 +11,9 @@ import TextField from "@material-ui/core/TextField"
 import Button from "@material-ui/core/Button"
 import CircularProgress from "@material-ui/core/CircularProgress"
 
-const styles = {
-  form: {
-    textAlign: "center"
-  },
-  image: {
-    margin: "10px auto"
-  },
-  pageTitle: {
-    margin: "10px auto"
-  },
-  textField: {
-    margin: "10px auto"
-  },
-  button: {
-    marginTop: 20,
-    position: "relative"
-  },
-  customError: {
-    color: "red",
-    fontSize: "0.8rem",
-    marginTop: 10
-  },
-  progress: {
-    position: "absolute"
-  }
-}
+const styles = theme => ({
+  ...theme
+})
 
 class login extends Component {
   constructor() {
@@ -61,6 +38,7 @@ class login extends Component {
       .post("/login", userData)
       .then(res => {
         console.log(res.data)
+        localStorage.setItem("FBIdToken", `Bearer ${res.data.token}`)
         this.setState({
           loading: false
         })
