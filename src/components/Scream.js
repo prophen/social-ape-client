@@ -19,7 +19,7 @@ const styles = {
   },
   content: {
     padding: 25,
-    objectFit: "cover"
+    objectFit: "contain"
   }
 }
 class Scream extends Component {
@@ -40,12 +40,7 @@ class Scream extends Component {
     return (
       <Card className={classes.card}>
         <CardMedia
-          image={
-            userImage ||
-            `https://api.adorable.io/avatars/285/${Math.floor(
-              Math.random() * Math.floor(7777)
-            )}.png`
-          }
+          image={userImage}
           title="Profile image"
           className={classes.image}
         />
