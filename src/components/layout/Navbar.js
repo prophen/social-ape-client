@@ -2,13 +2,13 @@ import React, { Component } from "react"
 import { Link } from "react-router-dom"
 import { connect } from "react-redux"
 import PropTypes from "prop-types"
-import MyButton from "../util/MyButton"
+import MyButton from "../../util/MyButton"
 // MUI
 
 import AppBar from "@material-ui/core/AppBar/AppBar"
 import Toolbar from "@material-ui/core/Toolbar"
 import Button from "@material-ui/core/Button"
-import PostScream from "./PostScream"
+import PostScream from "../scream/PostScream"
 // Icons
 import HomeIcon from "@material-ui/icons/Home"
 import Notifications from "@material-ui/icons/Notifications"
