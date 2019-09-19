@@ -35,7 +35,7 @@ class Comments extends Component {
                     <img
                       src={userImage}
                       alt="comment"
-                      classNamea={classes.commentImage}
+                      className={classes.commentImage}
                     />
                   </Grid>
                   <Grid item sm={9}>
