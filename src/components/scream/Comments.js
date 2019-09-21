@@ -52,7 +52,7 @@ class Comments extends Component {
                         {dayjs(createdAt).format("h:mm a, MMMM DD YYYY")}
                       </Typography>
                       <hr className={classes.invisibleSeparator} />
-                      <Typography variant="body1">{body}</Typography>
+                      <Typography variabnt="body1">{body}</Typography>
                     </div>
                   </Grid>
                 </Grid>
@@ -69,7 +69,7 @@ class Comments extends Component {
 }
 
 Comments.propTypes = {
-  comments: PropTypes.array.isRequired
+  comments: PropTypes.array
 }
 
 export default withStyles(styles)(Comments)
